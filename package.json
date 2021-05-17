@@ -1,0 +1,16 @@
+{
+  "name": "nodecrudsql",
+  "version": "1.0.0",
+  "description": "A api made for internship assignment purpose",
+  "main": "index.js",
+  "author": "Deepak Prakash",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
