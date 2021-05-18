@@ -2,12 +2,19 @@
 
 const Student = require("../models/student.model");
 
+/**
+ * Applies to all the function exports below
+ * @param {object} req
+ * @param {object} res
+ * @returns {object} back to the client
+ */
+
 exports.findAll = function (req, res) {
-  Student.findAll(function (err, employee) {
+  Student.findAll(function (err, student) {
     console.log("controller");
     if (err) return res.send(err);
-    console.log("res", employee);
-    res.status(200).send(employee);
+    console.log("res", student);
+    res.status(200).send(student);
   });
 };
 
