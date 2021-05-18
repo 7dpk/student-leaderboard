@@ -10,4 +10,4 @@ RUN yarn install
 
 COPY . /app 
 
-CMD npm run develop 
+CMD npm start
