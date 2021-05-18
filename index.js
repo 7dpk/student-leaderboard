@@ -1,7 +1,11 @@
 const express = require("express");
 const studentRoutes = require("./src/routes/student.routes");
-
+const cors = require("cors");
 const app = express();
+
+// allow all cors origin
+// must pass in origins explicitly in production
+app.use(cors());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
