@@ -10,4 +10,6 @@ RUN yarn install
 
 COPY . /app 
 
-CMD npm start
+EXPOSE 8080
+
+CMD yarn start
