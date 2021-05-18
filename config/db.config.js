@@ -9,8 +9,4 @@ const dbConn = mysql.createPool({
   database: process.env.DB_NAME,
   socketPath: `/cloudsql/${process.env.INSTANCE_CONNECTION_NAME}`,
 });
-dbConn.connect(function (err) {
-  if (err) throw err;
-  console.log("Database Connected!");
-});
 module.exports = dbConn;
